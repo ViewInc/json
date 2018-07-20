@@ -3226,14 +3226,16 @@ class parser
             case token_type::literal_true:
             {
                 result.m_type = value_t::boolean;
-                result.m_value = true;
+                //result.m_value = true;
+		result.m_value = m_lexer.get_number_integer();
                 break;
             }
 
             case token_type::literal_false:
             {
                 result.m_type = value_t::boolean;
-                result.m_value = false;
+                //result.m_value = false;
+		result.m_value = m_lexer.get_number_integer();
                 break;
             }
 
