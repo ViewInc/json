@@ -42,11 +42,11 @@ target_include_directories(
 ## TESTS
 ## create and configure the unit test target
 ##
-if(JSON_BuildTests)
-    enable_testing()
-    include_directories(${NLOHMANN_JSON_SOURCE_DIR})
-    add_subdirectory(test)
-endif()
+#if(JSON_BuildTests)
+#    enable_testing()
+#    include_directories(${NLOHMANN_JSON_SOURCE_DIR})
+#    add_subdirectory(test)
+#endif()
 
 ##
 ## INSTALL
